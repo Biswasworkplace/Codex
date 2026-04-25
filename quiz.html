@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz | Organic Chemistry Academy</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Organic Chemistry Academy</a>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav id="siteNav" class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="functional-groups.html">Functional Groups</a>
+          <a href="reaction-mechanisms.html">Mechanisms</a>
+          <a href="spectroscopy.html">Spectroscopy</a>
+          <a href="named-reactions.html">Named Reactions</a>
+          <a href="study-plan.html">Study Plan</a>
+          <a href="glossary.html">Glossary</a>
+          <a href="resources.html">Resources</a>
+          <a href="quiz.html" class="active">Quiz</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-content">
+      <h1>Organic Chemistry Mini Quiz</h1>
+      <form id="quizForm" class="quiz-form">
+        <fieldset>
+          <legend>1) Which mechanism gives inversion of stereochemistry?</legend>
+          <label><input type="radio" name="q1" value="SN1" /> SN1</label>
+          <label><input type="radio" name="q1" value="SN2" /> SN2</label>
+          <label><input type="radio" name="q1" value="E1" /> E1</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>2) A strong peak near 1715 cm⁻¹ in IR often indicates:</legend>
+          <label><input type="radio" name="q2" value="C=O" /> C=O</label>
+          <label><input type="radio" name="q2" value="O-H" /> O-H</label>
+          <label><input type="radio" name="q2" value="C=C" /> C=C</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>3) Grignard reagent typically acts as:</legend>
+          <label><input type="radio" name="q3" value="electrophile" /> Electrophile</label>
+          <label><input type="radio" name="q3" value="nucleophile" /> Nucleophile</label>
+          <label><input type="radio" name="q3" value="oxidant" /> Oxidant</label>
+        </fieldset>
+
+        <button type="button" id="gradeQuiz" class="btn">Submit Quiz</button>
+      </form>
+      <p id="quizResult" class="quiz-result" aria-live="polite"></p>
+    </main>
+
+    <footer class="site-footer"><div class="container"><p>© <span class="year"></span> Organic Chemistry Academy</p></div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
