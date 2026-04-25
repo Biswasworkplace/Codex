@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spectroscopy | Subrat Organic Notes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Subrat Organic Notes</a>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav id="siteNav" class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="functional-groups.html">Functional Groups</a>
+          <a href="reaction-mechanisms.html">Mechanisms</a>
+          <a href="spectroscopy.html" class="active">Spectroscopy</a>
+          <a href="named-reactions.html">Named Reactions</a>
+          <a href="study-plan.html">Study Plan</a>
+          <a href="glossary.html">Glossary</a>
+          <a href="resources.html">Resources</a>
+          <a href="quiz.html">Quiz</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-content">
+      <h1>Spectroscopy Solver</h1>
+      <div class="cards-grid">
+        <article class="card"><h2>IR</h2><ul><li>O-H broad: 3200-3600 cm⁻¹</li><li>C=O strong: 1650-1750 cm⁻¹</li><li>C-H sp2/sp3: 2850-3100 cm⁻¹</li></ul></article>
+        <article class="card"><h2>¹H NMR</h2><ul><li>Chemical shift tells proton environment.</li><li>Splitting approximately follows n+1 rule.</li><li>Integration gives proton ratio.</li></ul></article>
+        <article class="card"><h2>¹³C NMR</h2><ul><li>Number of signals equals unique carbons.</li><li>Carbonyl carbons often downfield (160+ ppm).</li><li>Proton-decoupled spectra usually singlets.</li></ul></article>
+        <article class="card"><h2>MS</h2><ul><li>M⁺ suggests molecular mass.</li><li>Base peak is most stable fragment.</li><li>M+2 pattern often implies halogens.</li></ul></article>
+      </div>
+    </main>
+
+    <footer class="site-footer"><div class="container"><p>© <span class="year"></span> Subrat Organic Notes</p></div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

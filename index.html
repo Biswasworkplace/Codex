@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subrat Organic Notes</title>
+    <meta name="description" content="A colorful and interactive multi-page organic chemistry website with notes, mechanisms, quizzes, and study tools." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Subrat Organic Notes</a>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav id="siteNav" class="site-nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="functional-groups.html">Functional Groups</a>
+          <a href="reaction-mechanisms.html">Mechanisms</a>
+          <a href="spectroscopy.html">Spectroscopy</a>
+          <a href="named-reactions.html">Named Reactions</a>
+          <a href="study-plan.html">Study Plan</a>
+          <a href="glossary.html">Glossary</a>
+          <a href="resources.html">Resources</a>
+          <a href="quiz.html">Quiz</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero colorful">
+        <div class="container">
+          <span class="badge">Interactive Learning Portal</span>
+          <h1>Subrat Organic Notes</h1>
+          <p>
+            Colorful notes + interactive revision widgets for Organic Chemistry.
+            Build concepts, solve mechanisms, and track your preparation.
+          </p>
+          <div class="button-row">
+            <a class="btn" href="study-plan.html">Start 4-Week Plan</a>
+            <a class="btn btn-secondary" href="quiz.html">Attempt Quiz</a>
+            <button class="btn btn-accent" id="surpriseFactBtn" type="button">Show Surprise Fact</button>
+          </div>
+          <p class="fact-box" id="surpriseFact">Click to see an organic chemistry fact.</p>
+        </div>
+      </section>
+
+      <section class="container cards-section">
+        <h2>Explore by Topic</h2>
+        <div class="cards-grid">
+          <article class="card card-pop"><h3>Functional Groups</h3><p>Recognize patterns and expected reactivity quickly.</p><a href="functional-groups.html">Open →</a></article>
+          <article class="card card-pop"><h3>Mechanisms</h3><p>Master arrow pushing and product prediction strategy.</p><a href="reaction-mechanisms.html">Open →</a></article>
+          <article class="card card-pop"><h3>Spectroscopy</h3><p>Decode IR/NMR/MS data in a structured sequence.</p><a href="spectroscopy.html">Open →</a></article>
+          <article class="card card-pop"><h3>Named Reactions</h3><p>Revise high-frequency reactions fast.</p><a href="named-reactions.html">Open →</a></article>
+          <article class="card card-pop"><h3>Glossary</h3><p>Important terms with concise definitions.</p><a href="glossary.html">Open →</a></article>
+          <article class="card card-pop"><h3>Resources</h3><p>Safety tips, revision routines and FAQ.</p><a href="resources.html">Open →</a></article>
+        </div>
+      </section>
+
+      <section class="container progress-section">
+        <h2>Topic Readiness Meter</h2>
+        <div class="progress-item">
+          <span>Functional Groups</span>
+          <div class="progress-track"><div class="progress-fill" data-progress="85"></div></div>
+        </div>
+        <div class="progress-item">
+          <span>Mechanisms</span>
+          <div class="progress-track"><div class="progress-fill" data-progress="75"></div></div>
+        </div>
+        <div class="progress-item">
+          <span>Spectroscopy</span>
+          <div class="progress-track"><div class="progress-fill" data-progress="70"></div></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span class="year"></span> Subrat Organic Notes</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
