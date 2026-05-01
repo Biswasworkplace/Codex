@@ -11,30 +11,6 @@ document.querySelectorAll('.year').forEach((node) => {
   node.textContent = String(new Date().getFullYear());
 });
 
-const facts = [
-  'Benzene ring carbons are all sp² hybridized and planar.',
-  'SN2 reactions always proceed with inversion at the stereocenter.',
-  'A strong C=O stretch in IR typically appears near 1700 cm⁻¹.',
-  'Grignard reagents behave like carbon nucleophiles.',
-  'Diels-Alder is a concerted [4+2] cycloaddition reaction.'
-];
-
-const surpriseFactBtn = document.getElementById('surpriseFactBtn');
-const surpriseFact = document.getElementById('surpriseFact');
-if (surpriseFactBtn && surpriseFact) {
-  surpriseFactBtn.addEventListener('click', () => {
-    const randomIndex = Math.floor(Math.random() * facts.length);
-    surpriseFact.textContent = facts[randomIndex];
-  });
-}
-
-document.querySelectorAll('.progress-fill').forEach((fill) => {
-  const target = fill.getAttribute('data-progress') || '0';
-  requestAnimationFrame(() => {
-    fill.style.width = `${target}%`;
-  });
-});
-
 const gradeBtn = document.getElementById('gradeQuiz');
 if (gradeBtn) {
   gradeBtn.addEventListener('click', () => {
@@ -59,7 +35,7 @@ if (gradeBtn) {
       return;
     }
 
-    result.textContent = score === 3 ? `Excellent! Your score: ${score}/3 🎉` : `Your score: ${score}/3`;
+    result.textContent = `Your score: ${score}/3`;
     result.style.color = score >= 2 ? '#166534' : '#991b1b';
   });
 }
